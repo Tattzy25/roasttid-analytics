@@ -1,0 +1,31 @@
+{
+	"name": "polished-tooth-8b9c",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-11-09",
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		// The path to the directory containing the `index.html` file to be served at `/`
+		"directory": "./public"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"routes": [
+		{
+			"pattern": "analytics.roasttid.com",
+			"zone_name": "roasttid.com",
+			"custom_domain": true,
+			"enabled": true,
+			"previews_enabled": false
+		}
+	],
+	"preview_urls": false,
+	"analytics_engine_datasets": [
+		{
+			"binding": "ANALYTICS_ENGINE",
+			"dataset": "roasttid_analytics"
+		}
+	]
+}
